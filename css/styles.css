@@ -7,7 +7,8 @@ body {
 }
 
 :root {
-  --nav-colour: #6d9faa;
+  --primary-colour: #6d9faa;
+  --secondary-colour: #638693;
 }
 
 /* Logo Container */
@@ -28,21 +29,26 @@ body {
 
 .mobile__menu__icon {
   align-items: center;
-  color: var(--nav-colour);
+  color: var(--primary-colour);
   display: flex;
   font-size: 17px;
   font-weight: bold;
   justify-content: center;
+  padding: 1rem;
   text-align: center;
 }
 
 .mobile__menu__icon__svg {
-  fill: var(--nav-colour);
+  fill: var(--primary-colour);
   padding-right: 0.5rem;
 }
 
 .mobile__menu__icon p {
   padding-bottom: 3px;
+}
+
+.mobile__menu__icon a {
+  padding-bottom: 0.3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,10 +60,26 @@ body {
 /* Desktop Nav */
 
 .desktop__nav {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.desktop__nav a {
+  color: var(--primary-colour);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
 }
 
 .desktop__nav ul li {
   list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop__nav {
+    display: block;
+  }
 }
 
 /* Button classes */
@@ -106,4 +128,68 @@ h2 {
   h1 {
     font-size: 4.5rem;
   }
+}
+
+/* Main Content */
+
+.main__content__container {
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.content__image__container {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 0.5rem;
+}
+
+h3 {
+  color: var(--secondary-colour);
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h4 {
+  color: var(--secondary-colour);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+p {
+  color: #666;
+  font-family: "Lora", serif;
+  line-height: 1.8;
+}
+
+.central__image {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main__content__container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .content__image__container {
+    float: right;
+    margin-left: 1.5rem;
+  }
+
+  .central__image__container {
+    float: left;
+    margin-right: 1.5rem;
+  }
+}
+
+/* Links */
+a {
+  color: var(--primary-colour);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover {
+  opacity: 0.7;
 }
