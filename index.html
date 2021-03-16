@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/1fc6aa401a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
@@ -13,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>
       Grand Technical - London Speaker Hire & Live Streaming Services
@@ -27,7 +29,7 @@
     <div class="menu__container">
       <div class="mobile__menu__icon">
         <button>
-          <svg
+          <a href="javascript:void(0)" onclick="myFunction()"><svg
             class="mobile__menu__icon__svg"
             viewBox="0 0 60 80"
             width="21"
@@ -38,25 +40,40 @@
             <rect y="60" width="100" height="15"></rect>
           </svg>
         </button>
-        <a href="#">MENU</a>
+        <p class="standard--link" id="mobile--nav--link">MENU</p></a>
       </div>
       <div class="desktop__nav">
         <ul>
-          <a href=""> <li>Home</li> </a
-          ><a href=""> <li>Sound System Hire</li> </a
-          ><a href=""> <li>Microphone Hire</li> </a
-          ><a href=""> <li>Lighting Hire</li> </a
-          ><a href=""> <li>Projector Hire</li> </a
-          ><a href=""> <li>Laptop Hire</li> </a
-          ><a href=""> <li>Blog</li> </a
-          ><a href="">
+          <a class="standard--link" href=""> <li>Home</li> </a
+          ><a class="standard--link" href=""> <li>Sound System Hire</li> </a
+          ><a class="standard--link" href=""> <li>Microphone Hire</li> </a
+          ><a class="standard--link" href=""> <li>Lighting Hire</li> </a
+          ><a class="standard--link" href=""> <li>Projector Hire</li> </a
+          ><a class="standard--link" href=""> <li>Laptop Hire</li> </a
+          ><a class="standard--link" href=""> <li>Blog</li> </a
+          ><a class="standard--link" href="">
             <li>Contact</li>
           </a>
         </ul>
       </div>
     </div>
 
-    <div class="hero__container">
+    <div id="sidebar__menu">
+      <ul>
+        <a href=""> <li class="mobile--link" >Home</li> </a
+          ><a href=""> <li class="mobile--link" >Sound System Hire</li> </a
+          ><a href=""> <li class="mobile--link" >Microphone Hire</li> </a
+          ><a href=""> <li class="mobile--link" >Lighting Hire</li> </a
+          ><a href=""> <li class="mobile--link" >Projector Hire</li> </a
+          ><a href=""> <li class="mobile--link" >Laptop Hire</li> </a
+          ><a href=""> <li class="mobile--link" >Blog</li> </a
+          ><a href="">
+             <li class="mobile--link" >Contact</li>
+          </a>
+      </ul>
+    </div>
+
+    <div class="hero__container" data-aos="zoom-in">
       <div class="hero__text">
         <h1>Welcome to Grand Technical</h1>
         <h2>We specialise in Event Production and Live Streaming Services</h2>
@@ -67,7 +84,7 @@
       <div class="grid__1">
         <h3>Total Event Production. Made By Professionals</h3>
         <div class="content__image__container">
-          <img src="img/microphone.jpeg" alt="" />
+          <img src="img/microphone.jpeg" data-aos="zoom-out-up" alt="" />
         </div>
         <p>
           Grand Technical is a London-Based <a href="#">Speaker Hire</a> company
@@ -114,7 +131,7 @@
         </p>
 
         <div class="central__image__container">
-          <img src="img/laptop.jpeg" alt="" />
+          <img src="img/laptop.jpeg" data-aos="zoom-in" alt="" />
         </div>
 
         <p>
@@ -130,21 +147,6 @@
           of extension leads (power), mouse mats, mice, and keyboards where
           needed.
         </p>
-
-        <h4>London AV Company & London Speaker Hire</h4>
-        <p>
-          Did you know that as well operating as a dry hire business, we also
-          provide full conference production for a range of clients, all across
-          the country? We have covered a vast range of areas outside the
-          capital, including Hertfordshire, Birmingham, Manchester & Edinburgh.
-          We provide a fully bespoke service from start to finish. From the
-          first call with Grand Technical, you will find us to be nothing but
-          supportive, understanding, and above all eager to meet and exceed your
-          expectations! Our Conference services include Venue finding, Sound
-          Reinforcement, lighting design, AV Technicians, Video/Projector
-          Production, and Laptop hire.
-        </p>
-
         <p>
           For more information on London Speaker Hire and our other services,
           visit our
@@ -165,7 +167,29 @@
           >.
         </p>
 
-        <div class="contact__form">
+        <div class="blog__highlights__container" >
+          <h4>Latest Blog Posts</h4>
+          <div class="blog__posts__grid">
+            <div class="blog__preview">
+              <img src="img/dj-course.jpeg" data-aos="fade-left" alt="">
+              <h4>The Best DJ Course in London - LSA</h4>
+              <span>August 6, 2020</span>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis repellat sequi vitae. Quia autem quos a ducimus natus eaque hic molestiae excepturi aspernatur! Reiciendis incidunt veritatis debitis quos at.</p>
+            </div>
+            <div class="blog__preview">
+              <img src="img/livestream.jpeg" data-aos="fade-left" alt="">
+              <h4>The Ultimate Guide to Livestreaming</h4>
+              <span>May 2, 2020</span>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis repellat sequi vitae. Quia autem quos a ducimus natus eaque hic molestiae excepturi aspernatur! Reiciendis incidunt veritatis debitis quos at.</p>
+            </div>
+            <div class="blog__preview"></div>
+          </div>
+        </div>
+        
+
+       
+
+        <div class="contact__form" data-aos="fade-right">
           <form action="#">
             <h4>Contact Us</h4>
             <label for="name">Name:</label>
@@ -219,9 +243,19 @@
       </div>
     </div>
     <footer>
+      <div class="social__icons">
+        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+      </div>
       <a href="#">Site Map</a>
       <p>Find us at 270-276 York Way, London, N7 9PQ</p>
       <p>&copy; Grand Technical 2016-2021</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
