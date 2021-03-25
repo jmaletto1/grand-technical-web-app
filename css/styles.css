@@ -40,16 +40,16 @@ body {
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
   background-color: #fff; /* White*/
+  height: 100%; /* 100% Full-height */
+  left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
+  position: fixed; /* Stay in place */
+  top: 0; /* Stay at the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  width: 0; /* 0 width - change this with JavaScript */
+  z-index: 1; /* Stay on top */
 }
 
 /* The navigation menu links */
@@ -254,6 +254,7 @@ img {
 }
 
 /* Welcome Content */
+
 .welcome__content__grid {
   display: grid;
   grid-template-columns: 100%;
@@ -314,6 +315,45 @@ a i {
   .welcome__content__grid {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+}
+
+/* Service Cards */
+.services__cards {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service__card {
+  background-image: linear-gradient(
+      0deg,
+      rgba(109, 159, 170, 0.5),
+      rgba(54, 80, 86, 0.7)
+    ),
+    url("/img/events-hero-min.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 220px;
+  max-width: 100%;
+}
+
+.service__card h4 {
+  color: white;
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 1.5rem;
+  margin-top: 45%;
+}
+
+.service__card img {
+  border-radius: 0;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .services__cards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
