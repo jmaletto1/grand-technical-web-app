@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/1fc6aa401a.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
@@ -17,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>
       Grand Technical - London Speaker Hire & Live Streaming Services
@@ -151,7 +147,12 @@
                   <div class="blog--image">
                     <img src="img/dj-course.jpeg" data-aos="fade-left" alt="" />
                   </div>
-                  <h4>The Best DJ Course in London - Lound Sound Academy</h4>
+                  <a
+                    href="https://grandtechnicalav.blogspot.com/2021/03/the-best-dj-course-in-london.html"
+                    target="_blank"
+                  >
+                    <h4>The Best DJ Course in London - Lound Sound Academy</h4>
+                  </a>
                   <span>August 6, 2020</span>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -168,7 +169,12 @@
                       alt=""
                     />
                   </div>
-                  <h4>The Ultimate Guide to Livestreaming</h4>
+                  <a
+                    href="https://grandtechnicalav.blogspot.com/2021/03/why-youll-need-to-consider-live.html"
+                    target="_blank"
+                  >
+                    <h4>The Ultimate Guide to Livestreaming</h4>
+                  </a>
                   <span>May 2, 2020</span>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -181,7 +187,7 @@
               </div>
             </div>
             <div class="contact__form" data-aos="fade-right" id="contact">
-              <form action="#">
+              <form action="https://formspree.io/f/moqyapeq" method="POST">
                 <h4>Contact Us</h4>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" />
@@ -198,13 +204,18 @@
                 ></textarea>
                 <div class="button__container">
                   <button class="button--submit">Submit</button>
-                  <button class="button--cancel">Reset</button>
+                  <button type="reset" class="button--cancel">Reset</button>
                 </div>
               </form>
             </div>
             <div class="mapouter">
               <div class="gmap_canvas">
-                <iframe
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Grand+Technical+-+London+Speaker+Hire/@51.5447517,-0.1281,17z/data=!3m1!4b1!4m5!3m4!1s0x48761be1da1c1127:0x58aa5d0b52c77c30!8m2!3d51.5447517!4d-0.1259113"
+                  ><img src="/img/google-map.webp" alt="" srcset=""
+                /></a>
+                <!-- <iframe
                   max-width="100%"
                   width="80%"
                   height="300"
@@ -214,7 +225,7 @@
                   scrolling="no"
                   marginheight="0"
                   marginwidth="0"
-                ></iframe>
+                ></iframe> -->
               </div>
             </div>
           </div>
@@ -223,15 +234,23 @@
     </div>
     <footer>
       <div class="social__icons">
-        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-        <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href="https://www.facebook.com/grandtechnical/" target="_blank"
+          ><i class="fab fa-facebook-square fa-2x"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCYFBr7xXGmuIBApaXPKme1Q"
+          target="_blank"
+          ><i class="fab fa-youtube-square fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/grandtechnicalav/" target="_blank"
+          ><i class="fab fa-instagram-square fa-2x"></i
+        ></a>
       </div>
-      <a href="#">Site Map</a>
       <p>Find us at 270-276 York Way, London, N7 9PQ</p>
       <p>&copy; Grand Technical 2016-2021</p>
     </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/font-awesome.js"></script>
+    <script src="js/aos.js"></script>
     <script>
       AOS.init();
     </script>
