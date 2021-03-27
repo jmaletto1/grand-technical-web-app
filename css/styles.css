@@ -338,6 +338,10 @@ a i {
 }
 
 /* Service Cards */
+
+.services__container {
+  margin-bottom: 3rem;
+}
 .services__cards {
   display: grid;
   gap: 1rem;
@@ -376,8 +380,16 @@ a i {
 }
 
 @media screen and (min-width: 768px) {
+  .services__container {
+    margin-bottom: 1rem;
+  }
+
+  .photo {
+    margin: 0 auto;
+  }
+
   .services__cards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 0.5rem;
     justify-content: center;
   }
@@ -401,6 +413,15 @@ a i {
 .photo img {
   width: 330px;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .photo,
+  .slide,
+  .photo img {
+    width: 300px;
+    border-radius: 4px;
+  }
 }
 
 .slide .button {
@@ -710,6 +731,12 @@ button {
 button:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__form {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {

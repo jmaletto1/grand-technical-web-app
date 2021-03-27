@@ -25,10 +25,17 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
-      <a href=""> Home </a><a href=""> Sound System Hire </a
-      ><a href=""> Live Streaming Services</a><a href=""> Laptop Hire </a
-      ><a href="https://grandtechnicalav.blogspot.com/" target="_blank"> Blog</a
-      ><a href="#contact">Contact</a>
+      <a class="mobile--link" href="#top"> Home </a
+      ><a class="mobile--link" href="#sound"> Sound System Hire </a
+      ><a class="mobile--link" href="#live"> Live Streaming Services</a>
+      <!-- <a class="mobile--link" href=""> Laptop Hire </a> -->
+      <a
+        class="mobile--link"
+        href="https://grandtechnicalav.blogspot.com/"
+        target="_blank"
+      >
+        Blog</a
+      ><a class="mobile--link" href="#contact">Contact</a>
     </div>
 
     <div class="main">
@@ -44,12 +51,14 @@
           </div>
           <div class="desktop__nav">
             <ul>
-              <a class="standard--link" href=""> <li>Home</li> </a
-              ><a class="standard--link" href=""> <li>Sound System Hire</li> </a
-              ><a class="standard--link" href="">
-                <li>Live Streaming Services</li> </a
-              ><a class="standard--link" href=""> <li>Laptop Hire</li> </a
-              ><a
+              <a class="standard--link" href="#top"> <li>Home</li> </a
+              ><a class="standard--link" href="#sound">
+                <li>Sound System Hire</li> </a
+              ><a class="standard--link" href="#live">
+                <li>Live Streaming Services</li>
+              </a>
+              <!-- <a class="standard--link" href=""> <li>Laptop Hire</li> </a> -->
+              <a
                 class="standard--link"
                 href="https://grandtechnicalav.blogspot.com/"
                 target="_blank"
@@ -68,8 +77,8 @@
       </div>
 
       <div class="content--background">
-        <div class="main__content__container" data-aos="zoom-in">
-          <div class="grid__1">
+        <div class="main__content__container" data-aos="fade-right">
+          <div class="grid__1" id="sound">
             <div class="welcome__content__grid">
               <div class="welcome--text">
                 <h3>London Speaker Hire</h3>
@@ -160,7 +169,7 @@
               call ahead before visiting us! As well as London Speaker Hire, we
               also offer the following services.
             </p>
-            <h4>Live Streaming Services</h4>
+            <h4 id="live">Live Streaming Services</h4>
             <p>
               With Conferences being streamed online more and more with each
               passing week, why not consider adding a Live Stream to your event?

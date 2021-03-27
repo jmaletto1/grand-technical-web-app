@@ -1,4 +1,5 @@
 const mainDiv = document.querySelector(".main");
+const sideNavLink = document.querySelectorAll(".mobile--link");
 
 let menuStatus = "closed";
 
@@ -25,4 +26,12 @@ mainDiv.addEventListener("click", () => {
   if (menuStatus === "open") {
     closeNav();
   }
+});
+
+// Close Mobile Nav When Links are Clicked
+
+sideNavLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeNav();
+  });
 });
